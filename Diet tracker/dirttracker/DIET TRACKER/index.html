@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diet Tracker</h1>
+        <form id="dietForm">
+            <div class="form-group">
+                <label for="meal">Select Food:</label>
+                <select id="meal" required>
+                    <option value="" disabled selected>Select a food</option>
+                    <option value="roti" data-calories="70">Roti (70 cal)</option>
+                    <option value="dal" data-calories="150">Dal (150 cal)</option>
+                    <option value="soybean" data-calories="446">Soybean (446 cal)</option>
+                    <option value="fish" data-calories="206">Fish (206 cal)</option>
+                    <option value="meat" data-calories="250">Meat (250 cal)</option>
+                    <option value="egg" data-calories="78">Egg (78 cal)</option>
+                    <option value="ice_cream" data-calories="137">Ice Cream (137 cal)</option>
+                    <option value="chocolate" data-calories="546">Chocolate (546 cal)</option>
+                    <option value="dry_fruit" data-calories="600">Dry Fruit (600 cal)</option>
+                    <option value="bhindi" data-calories="33">Bhindi (33 cal)</option>
+                    <option value="potato" data-calories="77">Potato (77 cal)</option>
+                    <option value="bread" data-calories="79">Bread (79 cal)</option>
+                    <option value="milk" data-calories="42">Milk (42 cal)</option>
+                    <option value="butter" data-calories="102">Butter (102 cal)</option>
+                    <option value="dahi" data-calories="61">Dahi (61 cal)</option>
+                    <option value="sugar" data-calories="16">Sugar (16 cal)</option>
+                    <!-- Add more food items here as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Enter Quantity:</label>
+                <input type="number" id="quantity" placeholder="Enter quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Enter Your Age:</label>
+                <input type="number" id="age" placeholder="Enter age" required>
+            </div>
+            <button type="submit">Add Meal</button>
+        </form>
+
+        <div id="results">
+            <h2>Results</h2>
+            <p id="totalCalories">Total Calories Eaten: 0</p>
+            <p id="remainingCalories"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
